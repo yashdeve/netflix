@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="yesh"> yesh is good boy</p>
+<input type="text" id="find" placeholder="find"><br><br>
+<input type="text" id="replace" placeholder="replace"><br><br>
+<button type="button" onclick="replace()">replace</button>
+<button type="button" onclick="">find</button>
+
+<script>
+
+function replace(){
+
+    let textdata = document.getElementById("yesh").innerHTML;
+    let finddata = document.getElementById("find").value;
+    let replacedata = document.getElementById("replace").value;
+    document.getElementById("yesh").innerHTML=textdata.replace(finddata,replacedata);   
+
+
+}
+
+
+
+</script>
+
+</body>
+</html>
